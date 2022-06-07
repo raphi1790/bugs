@@ -1,0 +1,119 @@
+### Diagnostics
+
+<details>
+<summary>Diagnostics output</summary>
+
+``````
+--- check: autoidentify
+INFO: diagnose_tensorboard.py version e43767ef2b648d0d5d57c00f38ccbd38390e38da
+
+--- check: general
+INFO: sys.version_info: sys.version_info(major=3, minor=10, micro=2, releaselevel='final', serial=0)
+INFO: os.name: posix
+INFO: os.uname(): posix.uname_result(sysname='Linux', nodename='', release='5.10.16.3-microsoft-standard-WSL2', version='#1 SMP Fri Apr 2 22:23:49 UTC 2021', machine='x86_64')
+INFO: sys.getwindowsversion(): N/A
+
+--- check: package_management
+INFO: has conda-meta: False
+INFO: $VIRTUAL_ENV: '/home/raphi/.local/share/virtualenvs/graph-MwCf7F4m'
+
+--- check: installed_packages
+INFO: installed: tensorboard==2.9.0
+INFO: installed: tensorflow==2.9.1
+INFO: installed: tensorflow-estimator==2.9.0
+INFO: installed: tensorboard-data-server==0.6.1
+
+--- check: tensorboard_python_version
+INFO: tensorboard.version.VERSION: '2.9.0'
+
+--- check: tensorflow_python_version
+2022-06-07 15:59:08.759019: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2022-06-07 15:59:08.763534: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2022-06-07 15:59:08.763586: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+INFO: tensorflow.__version__: '2.9.1'
+INFO: tensorflow.__git_version__: 'v2.9.0-18-gd8ce9f9c301'
+
+--- check: tensorboard_data_server_version
+INFO: data server binary: '/home/<user>/.local/share/virtualenvs/graph-MwCf7F4m/lib/python3.10/site-packages/tensorboard_data_server/bin/server'
+INFO: data server binary version: b'rustboard 0.6.1'
+
+--- check: tensorboard_binary_path
+INFO: which tensorboard: b'/home/<user>/.local/share/virtualenvs/graph-MwCf7F4m/bin/tensorboard\n'
+
+--- check: addrinfos
+socket.has_ipv6 = True
+socket.AF_UNSPEC = <AddressFamily.AF_UNSPEC: 0>
+socket.SOCK_STREAM = <SocketKind.SOCK_STREAM: 1>
+socket.AI_ADDRCONFIG = <AddressInfo.AI_ADDRCONFIG: 32>
+socket.AI_PASSIVE = <AddressInfo.AI_PASSIVE: 1>
+Loopback flags: <AddressInfo.AI_ADDRCONFIG: 32>
+Loopback infos: [(<AddressFamily.AF_INET6: 10>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('::1', 0, 0, 0)), (<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('127.0.0.1', 0))]
+Wildcard flags: <AddressInfo.AI_PASSIVE: 1>
+Wildcard infos: [(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('0.0.0.0', 0)), (<AddressFamily.AF_INET6: 10>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('::', 0, 0, 0))]
+
+--- check: readable_fqdn
+INFO: socket.getfqdn(): 'localdomain'
+
+--- check: stat_tensorboardinfo
+INFO: directory: /tmp/.tensorboard-info
+INFO: os.stat(...): os.stat_result(st_mode=16895, st_ino=60228, st_dev=2064, st_nlink=2, st_uid=1000, st_gid=1000, st_size=4096, st_atime=1598434963, st_mtime=1654610299, st_ctime=1654610299)
+INFO: mode: 0o40777
+
+--- check: source_trees_without_genfiles
+INFO: tensorboard_roots (1): ['/home/<user>/.local/share/virtualenvs/graph-MwCf7F4m/lib/python3.10/site-packages']; bad_roots (0): []
+
+--- check: full_pip_freeze
+INFO: pip freeze --all:
+absl-py==1.1.0
+astunparse==1.6.3
+cachetools==5.2.0
+certifi==2022.5.18.1
+charset-normalizer==2.0.12
+flatbuffers==1.12
+gast==0.4.0
+google-auth==2.6.6
+google-auth-oauthlib==0.4.6
+google-pasta==0.2.0
+grpcio==1.46.3
+h5py==3.7.0
+idna==3.3
+keras==2.9.0
+Keras-Preprocessing==1.1.2
+libclang==14.0.1
+Markdown==3.3.7
+numpy==1.22.4
+oauthlib==3.2.0
+opt-einsum==3.3.0
+packaging==21.3
+pip==22.0.4
+protobuf==3.19.4
+pyasn1==0.4.8
+pyasn1-modules==0.2.8
+pyparsing==3.0.9
+requests==2.27.1
+requests-oauthlib==1.3.1
+rsa==4.8
+setuptools==62.3.2
+six==1.16.0
+tensorboard==2.9.0
+tensorboard-data-server==0.6.1
+tensorboard-plugin-wit==1.8.1
+tensorflow==2.9.1
+tensorflow-estimator==2.9.0
+tensorflow-io-gcs-filesystem==0.26.0
+termcolor==1.1.0
+typing_extensions==4.2.0
+urllib3==1.26.9
+Werkzeug==2.1.2
+wheel==0.37.1
+wrapt==1.14.1
+
+``````
+
+</details>
+
+### Next steps
+
+No action items identified. Please copy ALL of the above output,
+including the lines containing only backticks, into your GitHub issue
+or comment. Be sure to redact any sensitive information.
