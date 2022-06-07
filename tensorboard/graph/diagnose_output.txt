@@ -15,7 +15,7 @@ INFO: sys.getwindowsversion(): N/A
 
 --- check: package_management
 INFO: has conda-meta: False
-INFO: $VIRTUAL_ENV: '/home/raphi/.local/share/virtualenvs/graph-MwCf7F4m'
+INFO: $VIRTUAL_ENV: '/home/<user>/.local/share/virtualenvs/graph-MwCf7F4m'
 
 --- check: installed_packages
 INFO: installed: tensorboard==2.9.0
